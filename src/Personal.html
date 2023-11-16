@@ -9,22 +9,24 @@
 </head>
 <body>
     <div class="master-container">
-        <header class="header-container">
+        <header id="header-container">
                 <div class="container">
                     <nav class="nav-container">
                         <img src="../assets/logo.png" alt="logo" class="logo-img">
                         <ul class="list-container">
-                            <li><a href="https://www.youtube.com/watch?v=wr9M-CoxP7A">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Portfolio</a></li> 
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#header-container">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#service">Services</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li> 
+                            <li><a href="#contact">Contact</a></li>
+                            <i class="fa-solid fa-x" onclick="closemenu()"></i>
                         </ul>
+                        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
                     </nav>
 
                     <div class="header-text">
                         <p>UI/UX Designer</p>
-                        <h1>Hi, I'm <span>Kevin</span> <br>Jen From Australia</h1>
+                        <h1>Hi, I'm <span>Tamizh</span> <br>San From India</h1>
                     </div>
         
                 </div>
@@ -80,7 +82,7 @@
 
 <!-- ---------------------Services---------------------------- -->
 
-        <div id="Services">
+        <div id="service">
             <div class="container">
                 <h1 class="subtitle">My services</h1>
                 <div class="service-list">
@@ -113,22 +115,74 @@
                 <div class="work-list">
                     <div class="work">
                         <img src="../assets/work-1.png" alt="image">
+                        <div class="layer">
+                            <h3>Social Media App</h3>
+                            <p>The app connnects you to the talented people around the world.
+                                Download it from play store.</p>
+                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
                     </div>
                
               
                     <div class="work">
                         <img src="../assets/work-2.png" alt="image">
+                        <div class="layer">
+                            <h3>Music App</h3>
+                            <p>The app connnects you to the talented people around the world.
+                                Download it from play store.</p>
+                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
                     </div>
              
                 
                     <div class="work">
                         <img src="../assets/work-3.png" alt="image">
+                        <div class="layer">
+                            <h3>Online shopping App</h3>
+                            <p>The app connnects you to the talented people around the world.
+                                Download it from play store.</p>
+                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
                     </div>
                 
             </div>
+            <a href="#" class="btn">See more</a>
+
         </div>
     </div>
-    
+
+<!-- ----------------------------contact---------------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7695875191</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="../assets/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright <i class="fa-regular fa-copyright"></i> Tamizh. Made with <i class="fa-solid fa-heart"></i> by Tamiz</p>
+            </div>
+
+        </div>
+    </div>
+</div>    
     
 
 
